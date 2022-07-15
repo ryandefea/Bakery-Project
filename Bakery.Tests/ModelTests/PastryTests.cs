@@ -24,10 +24,11 @@ namespace Py.Tests
     }
 
     [TestMethod]
-    public void SetPrice_SetPrice_int()
+    public void pastryFigure_SetPrice_int()
     {
       Pastry newPastry = new Pastry(1);
       newPastry.pastryPrice();
+      newPastry.pastryFigure();
       Assert.AreEqual(2,newPastry.Price);
     }
 
