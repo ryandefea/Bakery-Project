@@ -23,12 +23,14 @@ namespace Bd.Tests
       Assert.AreEqual(5, newBread.breadPrice());
     }
 
-    // [TestMethod]
-    // public void breadFigure_ReturningFinalBread_Bread()
-    // {
-    //   Bread newBread = new Bread(1);
-    //   Assert.AreEqual(5, newBread.breadPrice());
-    // }
+    [TestMethod]
+    public void breadFigure_GivePrice_int()
+    {
+      Bread newBread = new Bread(3);
+      newBread.breadPrice();
+      newBread.breadFigure();
+      Assert.AreEqual(10, newBread.Price);
+    }
 
     [TestMethod]
     public void SetPrice_SetPrice_int()
