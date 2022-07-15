@@ -32,6 +32,14 @@ namespace Py.Tests
       Assert.AreEqual(2,newPastry.Price);
     }
 
+    [TestMethod]
+    public void SetPrice_SetPrice_int()
+    {
+      Pastry newPastry = new Pastry(1);
+      newPastry.pastryPrice();
+      Assert.AreEqual(2,newPastry.Price);
+    }
+
    
   }
 }
