@@ -16,12 +16,12 @@ namespace Py.Tests
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
 
-    // [TestMethod]
-    // public void pastryPrice_ReturningFinalPastry_Pastry()
-    // {
-    //   Pastry newPastry = new Pastry(1);
-    //   Assert.AreEqual(2, newPastry.pastryPrice());
-    // }
+    [TestMethod]
+    public void pastryPrice_ReturningFinalPastry_Pastry()
+    {
+      Pastry newPastry = new Pastry(1);
+      Assert.AreEqual(2, newPastry.pastryPrice());
+    }
 
     [TestMethod]
     public void SetPrice_SetPrice_int()
