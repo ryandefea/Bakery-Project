@@ -1,21 +1,21 @@
-// using System;
-// using System.Collections.Generic;
-// using Microsoft.VisualStudio.TestTools.UnitTesting;
-// using Py.Models;
+using System;
+using System.Collections.Generic;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Py.Models;
 
-// namespace Py.Tests
-// {
-//   [TestClass]
-//   public class PyTests
-//   {
+namespace Py.Tests
+{
+  [TestClass]
+  public class PyTests
+  {
 
-//     [TestMethod]
-//     public void ItemConstructor_CreatesInstanceOfItem_Item()
-//     {
-//       Item newItem = new Item("test");
-//       Assert.AreEqual(typeof(Item), newItem.GetType());
-//     }
+    [TestMethod]
+    public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
+    {
+      Pastry newPastry = new Pastry(1);
+      Assert.AreEqual(typeof(Pastry), newPastry.GetType());
+    }
 
    
-//   }
-// }
+  }
+}
