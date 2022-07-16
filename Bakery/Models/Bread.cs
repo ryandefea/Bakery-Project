@@ -1,26 +1,40 @@
+using System;
 using System.Collections.Generic;
 
-namespace ToDoList.Models
+namespace Bd.Models
 {
-  public class Item
+  public class Bread
   {
-    public string Description { get; set; }
-    public static List<Item> GetAll()
+    public int BreadAmount { get; set; }
+    public int Price { get; set; }
+    
+    public Bread(int userInput)
     {
-      return _instances;
+      BreadAmount = userInput;
+      Price = 0;
     }
 
-    public static void ClearAll()
-    {
-      _instances.Clear();
+    public int breadPrice () {
+      int currentBread = 5;
+      int finalBread = currentBread * BreadAmount;
+      Price = finalBread;
+      return finalBread;
+    } 
+
+    public void breadFigure () { 
+      if (Price % 3 == 0)
+      {
+        int endBread = Price-(Price*1/3);
+        Price = endBread;
+      }   
+      else
+      {
+        Price = Price;
+      }
+
     }
 
-    private static List<Item> _instances = new List<Item> {};
-    // constructor
-    public Item(string description)
-    {
-      Description = description;
-      _instances.Add(this);
+
+    
     }
   }
-}
